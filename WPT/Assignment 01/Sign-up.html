@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #login-form-container{
+            padding-top: 10px;
+            background: rgba(135, 117, 117, 0.3);
+            width: 800px;
+            margin: 100px auto;
+            height: 500px;
+            text-align: center;
+            border-radius: 60px;
+        }
+        html{
+            height: 100%;
+        }
+        body{
+            background:linear-gradient(#e5e5e5,#09e9d7);
+            
+        }
+        input{
+            background-color: transparent;
+            height: 30px;
+            width: 300px;
+             margin-bottom: 20px;
+             padding-left: 10px;
+             outline: 0;
+            border-top-width: 0;
+            border-left-width: 0;
+            border-right-width: 0;
+            t
+        }
+        #btn{
+            margin: 20px auto;
+            display: block;
+            padding: 10px;
+            padding-bottom: 35px;
+            width: 150px;
+            height: 40px;
+            cursor: pointer;
+            background-color: #1c0e21;
+            color: white;
+            font-size: 17px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            border-bottom-style: solid;
+        }
+        .ip{
+            outline: 0;
+            border-top-width: 0;
+            border-left-width: 0;
+            border-right-width: 0;
+            
+        }
+        h2{
+            font-size: xx-large;
+            
+        }
+        .login{
+            display: flex;
+            position: relative;
+            justify-content: center;
+        }
+        #pwd{
+            margin-bottom: -30px;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div id="login-form-container">
+        <h2>Sign Up</h2>
+        <form>
+            <div class="ip"><input type="text" placeholder="First Name"></div>
+            <div class="ip"><input type="text" placeholder="Last Name"></div>
+            <div class="ip"><input type="email" placeholder="Email"></div>
+            <div id="pwd" class="ip"><input type="password" placeholder="password"></div>
+            <div class="login"><p>Already a member? <a href="#">Login</a></p></div>
+            <input type="submit" id="btn" value="Sign up">
+        </form>
+        
+    </div>
+</body>
+</html>

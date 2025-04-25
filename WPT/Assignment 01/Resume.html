@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #fff;
+            line-height: 1.6;
+        }
+        #first_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: rgb(82, 16, 7);
+    padding: 10px 15px;
+    margin-top: 10px;
+    color: rgb(239, 228, 227);
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+}
+
+#first_div img {
+    width: 110px;
+    height: auto;
+    margin-left: 20px;
+    flex-shrink: 0;
+}
+        /* #first_div {
+            width: 100%;
+            background-color: rgb(82, 16, 7);
+            color: rgb(239, 228, 227);
+            padding: 10px 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #first_div h2 {
+            font-size: xx-large;
+        }
+
+        #first_div img {
+            width: 110px;
+            height: auto;
+            border-radius: 5px;
+            
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 32px;
+             margin: 0;
+        }
+
+    .header p {
+         font-size: 20px;
+         margin-top: 5px;
+         color: #666;
+    } */
+
+    #main {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+}
+
+        .left {
+            width: 65%;
+        }
+
+        .right {
+            width: 35%;
+            background-color: rgb(245, 228, 228);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        h3 {
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        #SKILLS {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .l {
+            /* background-color: #ddd; */
+            padding: 5px 10px;
+            /* border-radius: 4px; */
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .right hr {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="first_div"  class="header">
+        <div id="one"><h2>Aarya Sanjay Dange</h2></div>
+        <div><h5>Software Developer &#128187 </h5></div>
+        <img src="resume_pic.jpg" width="110">
+    </div> -->
+    <div id="first_div">
+        <div class="header-text">
+            <h2>Aarya Sanjay Dange</h2>
+            <h5>Software Developer 💻</h5>
+        </div>
+        <img src="resume_pic.jpg" width="110">
+    </div>
+   
+    <div id="main">
+  
+    <div class="left">
+        <h3>S U M M A R Y</h3><hr>
+        <p> Enthusiastic Software Developer with a strong foundation in Programming and a passion for building innovative solutions. Currently pursuing PG-DAC.</p>
+        <h3>E D U C A T I O N</h3><hr>
+        <ul>
+            <li><b>B.E. (Information Technology)</b></li><p>FAMT, Ratnagiri</p><p>CGPA 8.00</p>
+            <li><b>H.S.C. (Science)</b></li><p>VCK (Kolhapur)</p><p>Percentage-73%</p>
+            <li><b><p>S.S.C.</b></p>NESL (Ratnagiri)</li><p></p><p>Percentage 89%</p>
+        </ul>
+        <h3>P R O J E C T S</h3><HR>
+            <p><b>Currency Converter</b><br>Web based application, designed to provide users with real time exchange rate conversions between different currencies.<br>
+            It offers a convenient and efficient way for users to convert currencies accurately and quickly.<br>
+            Supports a wide range of currencies , allowing users to covert between major world currencies.</p>
+        
+        <h3>S K I L L S</h3>
+        <ul id="SKILLS"><hr>
+            <li class="l">Java</li><li class="l">DSA</li><li class="l">Python</li><li class="l">SQL</li><li class="l">ReactJS</li>
+        </ul>
+    </div>
+    
+    
+    
+    <div class="right">
+        <div class="contact-info">
+        <b>&#128231 Email :</b>aryadange@gmail.com<br><br>
+        &#128279<b>Linkedin :</b><a href="https://www.linkedin.com/in/aarya-dange-6272b7231">LinkedIn/AaryaDange</a><br><br>
+        &#128279<b>GitHub :</b><a href="https://github.com/AaryaDange">Github/AaryaDange</a><br><br>
+        <b>&#128222 Phone :</b>+91 9545513034<br><br>
+        <b>&#127969 Location :</b>Ratnagiri<br><br>
+        <b>I N T E R E S T S</b><hr>
+        Travelling<br><br>Listening Music<br><br>Reading Books<br><br>
+        <b>L A N G U A G E S</b><hr>
+        English<br><br>Marathi<br><br>Hindi<br><br>
+        </div>
+     </div>
+    </div>
+
+</body>
+</html>
