@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            height: 100vh;
+            font-size: xx-large;
+
+        }
+        button{
+            height: 50px;
+            width: 90px;
+            font-size: large;
+        }
+        div{
+           
+            height: 30%;
+            width: 70%;
+            /* justify-content: center;
+            align-items: center; */
+            text-align: center;
+            border: 5px solid brown;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p id="parag">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur odit dignissimos illo illum voluptatem temporibus laborum consequatur voluptate 
+            aspernatur fugit fuga maxime odio iste veritatis quidem, quia quisquam, possimus error.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Molestias doloribus obcaecati eum modi provident blanditiis suscipit nulla dignissimos, 
+            illum accusamus totam ipsa laboriosam, deserunt nihil autem unde amet! Dolor, doloribus!</p>
+    
+            <button onclick="change_para()">Submit</button>
+    </div>
+    <script>
+        
+        function change_para(){
+            var para=document.getElementById("parag");
+            para.style.color="violet";
+            para.style.backgroundColor="black";
+            para.style.fontSize="30px";
+            para.style.fontFamily="Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif";
+        }
+    </script>
+</body>
+</html>

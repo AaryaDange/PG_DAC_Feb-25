@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            
+            /*display: flex;
+            align-items: center;
+            justify-content: center;
+             height: 100vh; */
+            
+        }
+        #first{
+            height: 400px;
+            width: 600px;
+            border: 10px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 40px;
+            margin-left: 35%;
+            margin-bottom: 40px;
+        }
+        #second{
+            height: 300px;
+            width: 600px;
+            border: 10px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-left: 35%;
+            font-size: x-large;
+        }
+        input{
+            margin: 10px;
+            height: 50px;
+            width: 200px;
+            padding-left: 10px;
+            font-size: large;
+        }
+        label{
+            font-size: x-large;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="first">
+        <form id="myForm">
+            <label>First Name:</label>
+            <input type="text" placeholder="First Name" id="fname"><br>
+            <label>Last Name:</label>
+            <input type="text" placeholder="Last Name" id="lname"><br>
+            <label>Contact Num:</label>
+            <input type="number" placeholder="Contact" id="num"><br>
+            <label>Email Id:</label>
+            <input type="email" placeholder="Email Id" id="mail"><br>
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+    <div id="second">
+        
+    </div>
+    <script>
+        document.getElementById("myForm").addEventListener("submit",function(event){
+            event.preventDefault(); 
+            var f=document.getElementById("fname").value;
+            var l=document.getElementById("lname").value;
+            var n=document.getElementById("num").value;
+            var e=document.getElementById("mail").value;
+
+            var op=document.getElementById("second");
+            op.innerHTML=`
+            <div>
+            <p><strong>First Name: </strong> ${f}</p>
+            <p><strong>Last Name: </strong> ${l}</p>
+            <p><strong>Mobile Num: </strong> ${n}</p>
+            <p><strong>Email: </strong> ${e}</p></div>
+            `
+        });
+
+    </script>
+    
+</body>
+</html>

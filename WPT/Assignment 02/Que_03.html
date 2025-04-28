@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-size: 25px;
+        }
+        #frm{
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            /* margin: 20%;
+            padding: 20%; */
+            text-align: center;
+            margin: 20%;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: black;
+            color: aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+    <form id="frm" style="font-size: large;">
+        <select name="Hobby" id="hobby" style="font-size:xx-large;">
+            <option value="">Select Hobby</option>
+            <option value="Travelling">Travelling</option>
+            <option value="Dancing">Dancing</option>
+            <option value="Cooking">Cooking</option>
+            <option value="Reading">Reading</option>
+        
+        </select><br><br>
+
+        <button onclick="rmv(event)">Remove</button>
+    </form>
+    <script>
+        function rmv(event){
+            event.preventDefault(); 
+            var drop=document.getElementById("hobby");
+
+            if(drop.options.length>0){
+                drop.remove(drop.selectedIndex);
+            }
+            else{
+                alert("no item");
+            }
+        }
+    </script>
+</body>
+</html>
